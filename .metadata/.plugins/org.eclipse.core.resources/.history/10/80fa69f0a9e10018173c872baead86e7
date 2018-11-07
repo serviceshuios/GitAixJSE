@@ -1,0 +1,27 @@
+package metier;
+
+public class CompteSimple extends Compte {
+	private double decouvert;
+
+	public double getDecouvert() {
+		return decouvert;
+	}
+
+	public void setDecouvert(double decouvert) {
+		this.decouvert = decouvert;
+	}
+
+	public void retirer(double mt) {
+		if(solde+decouvert>=mt) {
+			
+		}
+		else {
+			System.out.println("PROVISION INSUFFISANTE");
+		}
+	}
+	@Override
+	public String toString() {
+		return "CompteSimple [decouvert=" + decouvert + ", toString()=" + super.toString() + "]";
+	}
+
+}

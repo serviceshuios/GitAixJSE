@@ -1,0 +1,19 @@
+package presentation;
+
+import metier.Client;
+import metier.Employe;
+import metier.Personne;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		Personne p = new Personne();
+		p.setNom("pers1");
+		p.setPrenom("prenom1");
+		p.setAge(25);
+		Client c = new Client();
+		Employe e = new Employe();
+
+	}
+
+}

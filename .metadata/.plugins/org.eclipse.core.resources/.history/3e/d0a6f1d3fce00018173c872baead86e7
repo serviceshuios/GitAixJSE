@@ -1,0 +1,5 @@
+/**
+ * Package regroupant les classes de structure de mon projet
+ * @author ib
+ */
+package metier;

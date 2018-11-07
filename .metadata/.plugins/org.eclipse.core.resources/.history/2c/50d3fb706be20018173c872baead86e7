@@ -1,0 +1,17 @@
+package presentation;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// déclaration d'un tableau
+		int[] liste;
+		// initialisation d'un tableau
+		liste = new int[11];
+		//ajout d'elements dans un tableau
+		
+		
+		// parcours d'un tableau
+
+	}
+
+}

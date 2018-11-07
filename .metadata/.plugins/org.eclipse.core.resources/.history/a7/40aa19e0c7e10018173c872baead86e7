@@ -1,0 +1,51 @@
+package presentation;
+
+import metier.Compte;
+import metier.CompteEpargne;
+import metier.ComptePayant;
+import metier.CompteSimple;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//1- Choix du type de Compte
+		//2- Choix opération
+		//3- effectuer opération
+		Compte c = new Compte();
+		CompteSimple cs = new CompteSimple();
+		CompteEpargne ce = new CompteEpargne();
+		ComptePayant cp = new ComptePayant();
+		//Compte
+		System.out.println("------------------COMPTE--------------------------");
+		c.setSolde(1000);
+		System.out.println(c);
+		c.retirer(500);
+		System.out.println(c);
+		
+		System.out.println("------------------COMPTE SIMPLE--------------------------");
+		//Compte Simple
+		cs.setSolde(1000);
+		cs.setDecouvert(500);
+		System.out.println(cs);
+		cs.retirer(1200);
+		System.out.println(cs);
+		
+		System.out.println("------------------COMPTE EPARGNE--------------------------");
+		//Compte Epargne
+		ce.setSolde(1000);
+		ce.setTaux(0.05);
+		System.out.println(ce);
+		ce.calculInterets();
+		System.out.println(ce);
+		
+		//Compte Payant
+		System.out.println("------------------COMPTE PAYANT--------------------------");
+		cp.setSolde(2000);
+		cp.setPourcentage(5);
+		System.out.println(cp);
+		cp.retirer(500);
+		System.out.println(cp);
+	}
+
+}

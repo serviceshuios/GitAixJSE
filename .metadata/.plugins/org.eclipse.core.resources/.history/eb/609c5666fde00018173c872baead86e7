@@ -1,0 +1,47 @@
+package metier;
+
+public class Holding {
+	private String nom;
+	private int chiffreAff;
+	private String codeAPE;
+	
+	
+	public Holding() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Holding(String nom, int chiffreAff, String codeAPE) {
+		super();
+		this.nom = nom;
+		this.chiffreAff = chiffreAff;
+		this.codeAPE = codeAPE;
+	}
+
+
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public int getChiffreAff() {
+		return chiffreAff;
+	}
+	public void setChiffreAff(int chiffreAff) {
+		this.chiffreAff = chiffreAff;
+	}
+	public String getCodeAPE() {
+		return codeAPE;
+	}
+	public void setCodeAPE(String codeAPE) {
+		this.codeAPE = codeAPE;
+	}
+	@Override
+	public String toString() {
+		return "Holding [nom=" + nom + ", chiffreAff=" + chiffreAff + ", codeAPE=" + codeAPE + "]";
+	}
+	
+	
+}

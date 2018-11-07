@@ -1,0 +1,32 @@
+package presentation;
+
+import metier.Client;
+import metier.Employe;
+import metier.Personne;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		Personne p = new Personne();
+		p.setNom("pers1");
+		p.setPrenom("prenom1");
+		p.setAge(25);
+		
+		Client c = new Client();
+		c.setNom("client1");
+		c.setPrenom("prenom 2");
+		c.setAge(35);
+		c.setNumeroAdherent(458789);
+		
+		Employe e = new Employe();
+		e.setNom("employe1");
+		e.setPrenom("prenom 3");
+		e.setAge(45);
+		e.setSalaire(3500);
+		
+		System.out.println(p);
+		System.out.println(c);
+		System.out.println(e);
+	}
+
+}

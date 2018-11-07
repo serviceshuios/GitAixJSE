@@ -1,0 +1,21 @@
+package presentation;
+
+import metier.Fruit;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// déclaration d'un tableau
+				Fruit[] lesFruits;
+		// initialisation d'un tableau
+				lesFruits = new Fruit[5];
+		//ajout d'elements dans un tableau
+				Fruit fruit = new Fruit();
+				fruit.setPoids(12);
+				
+				Pomme pomme = new Pomme(15);
+		// parcours d'un tableau
+
+	}
+
+}

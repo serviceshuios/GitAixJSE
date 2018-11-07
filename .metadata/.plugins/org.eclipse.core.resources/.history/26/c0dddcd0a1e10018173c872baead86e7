@@ -1,0 +1,34 @@
+package metier;
+
+public class Rectangle {
+	private Double longueur;
+	private Double largeur;
+	
+	
+	public Rectangle(Double longueur, Double largeur) {
+		super();
+		this.longueur = longueur;
+		this.largeur = largeur;
+	}
+	
+	public Double getLongueur() {
+		return longueur;
+	}
+	public void setLongueur(Double longueur) {
+		this.longueur = longueur;
+	}
+	public Double getLargeur() {
+		return largeur;
+	}
+	public void setLargeur(Double largeur) {
+		this.largeur = largeur;
+	}
+	
+	@Override
+	public String toString() {
+		return "Rectangle [longueur=" + longueur + ", largeur=" + largeur + "]";
+	}
+	
+	
+	
+}

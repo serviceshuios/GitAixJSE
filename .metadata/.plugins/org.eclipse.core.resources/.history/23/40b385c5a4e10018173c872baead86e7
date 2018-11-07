@@ -1,0 +1,17 @@
+package presentation;
+
+import metier.Rectangle;
+
+public class TestRectangle {
+
+	public static void main(String[] args) {
+
+		//1-récuperer les valeurs saisies par l'utilisateur
+		
+		//2- construire l'objet
+		
+		//3- faire l'operation
+		r.affiche();
+	}
+
+}

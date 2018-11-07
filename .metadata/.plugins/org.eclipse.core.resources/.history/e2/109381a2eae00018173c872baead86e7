@@ -1,0 +1,16 @@
+package presentation;
+import metier.Personne;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// instanciation de l'objet personne
+		Personne p = new Personne();
+		
+		//appel de la méthode d'affichage
+		p.affiche();
+	}
+
+}

@@ -1,0 +1,22 @@
+package presentation;
+
+import metier.Compte;
+import metier.CompteEpargne;
+import metier.ComptePayant;
+import metier.CompteSimple;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		
+		int choixNiveau1=100;
+		System.out.println("MENU");
+		System.out.println("TAPER 0 pour quitter");
+		System.out.println("TAPER 1 pour afficher les créations de compte");
+		Scanner clavier = new Scanner(System.in);
+		while(choixNiveau1!=0) {
+			
+		}
+	}
+
+}

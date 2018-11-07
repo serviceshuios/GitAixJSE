@@ -1,0 +1,33 @@
+package metier;
+
+public class ComptePayant extends Compte {
+	//5% => 5
+	private float pourcentage;
+
+	public float getPourcentage() {
+		return pourcentage;
+	}
+
+	public void setPourcentage(int pourcentage) {
+		this.pourcentage = pourcentage;
+	}
+	
+	public void verser(double mt) {
+		solde+=mt*(1-pourcentage/100);
+	}
+	
+	public void retirer(double mt) {
+		if(solde-mt*(1+pourcentage/100)>=0)
+		{
+			solde-=mt*(1+pourcentage/100);
+		}
+		else 
+		{
+			System.out.println("SOLDE INSUFFISANT");
+		}
+	}
+	@Override
+	public String toString() {
+		return "ComptePayant [pourcentage=" + pourcentage + ", toString()=" + super.toString() + "]";
+	}
+}

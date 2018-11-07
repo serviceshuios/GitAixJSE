@@ -1,0 +1,24 @@
+package presentation;
+
+import metier.Compte;
+import metier.CompteEpargne;
+import metier.ComptePayant;
+import metier.CompteSimple;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Double x;
+		Compte c = new Compte();
+		CompteSimple cs = new CompteSimple();
+		CompteEpargne ce = new CompteEpargne();
+		ComptePayant cp = new ComptePayant();
+		
+		c.setSolde(1000);
+		System.out.println(c);
+		c.retirer(500);
+		System.out.println(c);
+	}
+
+}

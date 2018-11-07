@@ -1,0 +1,13 @@
+package metier;
+
+public class Pomme extends Fruit {
+
+	public Pomme(int p) {
+		super();
+		poids=p;
+	}
+	
+	public void affiche() {
+		System.out.println("C'est une pomme");
+	}
+}

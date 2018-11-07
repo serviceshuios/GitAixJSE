@@ -1,0 +1,18 @@
+package metier;
+
+public class ComptePayant extends Compte {
+	private float pourcentage;
+
+	public float getPourcentage() {
+		return pourcentage;
+	}
+
+	public void setPourcentage(int pourcentage) {
+		this.pourcentage = pourcentage;
+	}
+
+	@Override
+	public String toString() {
+		return "ComptePayant [pourcentage=" + pourcentage + ", toString()=" + super.toString() + "]";
+	}
+}

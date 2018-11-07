@@ -1,0 +1,9 @@
+package metier;
+
+public class Orange extends Fruit {
+
+	public Orange(int p)
+	{
+		poids=p;
+	}
+}

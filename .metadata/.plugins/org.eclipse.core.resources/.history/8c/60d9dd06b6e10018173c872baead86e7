@@ -1,0 +1,22 @@
+package metier;
+
+public class CompteEpargne extends Compte {
+	//taux 0.05 = 5%
+	private double taux;
+
+	public double getTaux() {
+		return taux;
+	}
+
+	public void setTaux(double taux) {
+		this.taux = taux;
+	}
+
+	public double calculInterets() {
+		return solde*taux;
+	}
+	@Override
+	public String toString() {
+		return "CompteEpargne [taux=" + taux + ", toString()=" + super.toString() + "]";
+	}
+}

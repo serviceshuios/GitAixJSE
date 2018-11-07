@@ -1,0 +1,75 @@
+package metier;
+
+public class Compte {
+	private int code;
+	protected double solde;
+	private static int nbComptes;
+	
+	
+	public Compte() {
+		nbComptes++;
+	}
+	
+	
+	public Compte(double solde) {
+		super();
+		this.solde = solde;
+		nbComptes++;
+	}
+
+
+	public Compte(int code, double solde) {
+		super();
+		this.code = code;
+		this.solde = solde;
+		nbComptes++;
+	}
+
+
+	public static int getNbComptes() {
+		return nbComptes;
+	}
+	public static void setNbComptes(int nbComptes) {
+		Compte.nbComptes = nbComptes;
+	}
+	
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public double getSolde() {
+		return solde;
+	}
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+	@Override
+	public String toString() {
+		return "Compte [code=" + code + ", solde=" + solde + "]";
+	}
+	
+	public  void verser(double mt) {
+		if(mt>0)
+			{ solde+=mt;}
+		else {
+			System.out.println("ATTENTION MONTANT NEGATIF");
+		}
+	}
+	
+	public void retirer(double mt) {
+		if(mt>0) {
+			if(solde - mt >= 0)
+			{
+				solde-=mt;
+			}
+			else {
+			System.out.println("PROVISION INSUFFISANTE");
+			}
+		}
+		else {
+			System.out.println("ATTENTION MONTANT NEGATIF");
+		}
+	}
+}
