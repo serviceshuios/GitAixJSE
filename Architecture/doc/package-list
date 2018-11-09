@@ -1,0 +1,5 @@
+com.ib.architecture
+com.ib.architecture.dao
+com.ib.architecture.metier
+com.ib.architecture.presentation
+com.ib.architecture.service
