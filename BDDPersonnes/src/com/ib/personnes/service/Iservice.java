@@ -3,6 +3,7 @@ package com.ib.personnes.service;
 import java.util.List;
 
 import com.ib.personnes.metier.Personne;
+import com.ib.personnes.metier.Voiture;
 
 public interface Iservice {
 	/**
@@ -33,4 +34,10 @@ public interface Iservice {
 	 * @return toutes les personnes
 	 */
 	public List<Personne> ListerPersonnes();
+	
+	public int ajouterVoiture(Voiture v);
+	public List<Voiture> listerVoitures();
+	public Voiture getVoiture(int idVoiture);
+	public int supprimerVoiture(Voiture v);
+	public void modifierVoiture(Voiture v);
 }

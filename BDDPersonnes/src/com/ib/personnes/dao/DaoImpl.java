@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.ib.personnes.metier.Personne;
+import com.ib.personnes.metier.Voiture;
 
 public class DaoImpl implements Idao {
 
@@ -168,6 +169,36 @@ public class DaoImpl implements Idao {
 		}
 		
 		return personnes;
+	}
+
+	@Override
+	public int ajouterVoiture(Voiture v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Voiture> listerVoitures() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Voiture getVoiture(int idVoiture) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int supprimerVoiture(Voiture v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void modifierVoiture(Voiture v) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
